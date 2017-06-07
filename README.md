@@ -1,3 +1,8 @@
 This is a simple drawing program (a la etch-a-sketch) using HTML, CSS, Javascript, and Jquery.
 
-Completed for the Odin Project.
+Future fixes:
+-64 square version is outside the wrapper
+-Change the way the table updates- right now it isn't akward.
+
+
+Made as part of the Odin Project.
