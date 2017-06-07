@@ -14,7 +14,7 @@ h1 {
 
 #wrapper {
   margin: 0 auto;
-  width: 750px;
+  width: 100%;
   background-color: #d3d0cb;
   border-radius: 7px;
 }
@@ -50,13 +50,14 @@ h1 {
 #numRows {
   margin: 3px auto;
   width: 64px;
-  /*background-color: #587b7f;*/
   border: none;
-  margin: 5px;
+  margin: 5px;\
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	 appearance: none;
 }
 
 #penColor {
-	/*background-color: #587b7f;*/
 	vertical-align: middle;
 	border: none;
 	margin: 5px;
@@ -66,9 +67,11 @@ h1 {
 #btn {
 	background-color: #e2c044;
 	font-weight: bold;
-	font-size: 18pt;
+	font-size: 16pt;
 	border: none;
-	border-radius: 7px;
+	color: black;
+	padding: 6px;
+	/*border-radius: 7px;*/
 }
 
 label {

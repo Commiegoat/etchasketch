@@ -15,9 +15,10 @@ $(document).ready(function() {
         $("#board").append("<br/>");
       }
       $("#board").height(x*12).width(x*12);
+      $("#wrapper").width(x*14);
+      $("#btn").text("Re-generate");
       fabulize();
     }
-    $("#numRows").val("");
 
   function fabulize() {
     $(".fabuloso").on("mouseover", function() {
