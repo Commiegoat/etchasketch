@@ -20,8 +20,8 @@ h1 {
 }
 
 #board {
-  height: 550px;
-  width: 550px;
+  height: 600px;
+  width: 600px;
   background-color: white;
   margin: 0px auto;
   padding: 5px;
