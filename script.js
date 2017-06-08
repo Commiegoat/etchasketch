@@ -1,22 +1,33 @@
 $(document).ready(function() {
-  $("#btn").on("click", function() {
-    var $x = $("#numRows").val();
-    generate($x);
-  })
   
-  function generate(x) {
+  generate(16);
+
+  $("#btn").on("click", function() {
+    $("#shaker").effect("shake", {direction: "up", times: 3, distance: 17}, 600);
     $(".fabuloso").remove();
     $("#board").find('br').remove();
-    for (var i = 0; i < x; i++) {
-    	$("#board").append( $("<div/>").addClass('fabuloso') );
-        for (var j = 1; j < x; j++) {
-        	$("#board").append($("<div/>").addClass('fabuloso'));
-        }
-        $("#board").append("<br/>");
-      }
-      $("#board").height(x*12).width(x*12);
-      $("#wrapper").width(x*14);
-      $("#btn").text("Re-generate");
+    window.setTimeout(numRows, 600);
+  })
+  
+  function numRows() {
+  	var rows = window.prompt("Enter a number under 64", 16);
+  	generate(rows);
+  }
+
+  function generate(x) {
+  	if ($.isNumeric(x) && x<100) {
+	  	for (var i = 0; i < x; i++) {
+	      var $size = ($("#board").width()/x)-2;
+	      var $div = $("#board").append( $("<div/>").addClass('fabuloso').css({"height": $size, "width": $size}));     
+	        for (var j = 1; j < x; j++) {
+	          $("#board").append( $("<div/>").addClass('fabuloso').css({"height": $size, "width": $size}));
+	        }
+	        $("#board").append("<br/>");
+	    }
+  	} else {
+  		alert(x + " is not a number or is too big!")
+  		numRows();
+  	}
       fabulize();
     }
 
@@ -26,4 +37,4 @@ $(document).ready(function() {
       $(this).css("background-color", $color);
     });
   };
-})
+});

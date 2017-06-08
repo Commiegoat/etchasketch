@@ -4,25 +4,20 @@
 <title>Doodler</title>
 <link rel="stylesheet" type="text/css" href="styles.css"></link>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script src="script.js"></script>
 </head>
 <body>
-	<div id="wrapper">
+	<div id="shaker"><div id="wrapper">
 	<h1>Etch-a-sketch</h1>
 	<div id="board"></div>
 	<div id="options">
-	<label for="numRows">How big a square?</label><select name="Rows" id="numRows" alt="Please enter an integer value 1-100:">
-		<option value=16>16</option>
-		<option value=32>32</option>
-		<option value=48>48</option>
-		<option value=64>64</option>
-	</select>
-	<label for="penColor">Choose a color:</label><input type="color" id="penColor" alt="Please select a color:">
-	<br>
-	<button id="btn">Generate!</button>
+		<label for="penColor">Choose a color:</label><input type="color" id="penColor" alt="Please select a color:">
+		<br>
+		<button id="btn">Shake it</button>
 	</div>
 	</div>
-
+</div>
 </body>
 
 </html>
