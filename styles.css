@@ -3,7 +3,12 @@
 }
 
 body {
-	background-color: #d3d0cb;
+	background: #d3d0cb;
+  background: -webkit-linear-gradient(#d3d0cb, #efece6); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d3d0cb, #efece6); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d3d0cb, #efece6); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d3d0cb, #efece6); /* Standard syntax */
+  height: 100vh;
 }
 
 h1 {
@@ -17,13 +22,14 @@ h1 {
   width: 70%;
   background-color: #587b7f;
   border-radius: 7px;
+  min-width: 620px;
 }
 
 #board {
-  height: 600px;
   width: 600px;
-  background-color: white;
-  margin: 0px auto;
+  height: width;
+  background: white;
+  margin: auto;
   padding: 5px;
   white-space: nowrap;
   line-height: 0;
@@ -31,7 +37,7 @@ h1 {
 }
 
 .fabuloso {
-  border: .25px solid #d3d0cb;
+  outline: 1px solid #d3d0cb;
   display: inline-block;
   margin: 0px;
   padding: 0px;
@@ -42,19 +48,9 @@ h1 {
 
 #options {
 	text-align: center;
-	background-color: #2d3047;
+	background: #2d3047;
 	margin-top: 7px;
 	padding: 10px;
-}
-
-#numRows {
-  margin: 3px auto;
-  width: 64px;
-  border: none;
-  margin: 5px;\
-	-webkit-appearance: none; 
-	-moz-appearance: none;
-	 appearance: none;
 }
 
 #penColor {
@@ -65,9 +61,9 @@ h1 {
 
 
 #btn {
-	background-color: #e2c044;
+	background: #e2c044;
 	font-weight: bold;
-	font-size: 16pt;
+	font-size: 1.4em;
 	border: none;
 	color: black;
 	padding: 6px;
@@ -79,4 +75,5 @@ h1 {
 
 label {
 	color: white;
+  font-size: 1.4em;
 }

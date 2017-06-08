@@ -15,9 +15,10 @@ $(document).ready(function() {
   }
 
   function generate(x) {
+  	var $size = ($("#board").width()/x);
   	if ($.isNumeric(x) && x<=64) {
-	  	for (var i = 0; i < x; i++) {
-	      var $size = ($("#board").width()/x)-2;
+	  	for (var i = 0; i < x; i++) {     
+	      
 	      var $div = $("#board").append( $("<div/>").addClass('fabuloso').css({"height": $size, "width": $size}));     
 	        for (var j = 1; j < x; j++) {
 	          $("#board").append( $("<div/>").addClass('fabuloso').css({"height": $size, "width": $size}));
