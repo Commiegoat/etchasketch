@@ -1,20 +1,20 @@
 * {
-	font-family: tahoma, arial, sans-serif;
+	font-family: "Courier New", Courier, monospace;
 }
 
 body {
-	background: #d3d0cb;
-  background: -webkit-linear-gradient(#d3d0cb, #efece6); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#d3d0cb, #efece6); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#d3d0cb, #efece6); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#d3d0cb, #efece6); /* Standard syntax */
+  background: #d3d0cb;
+  background: -webkit-linear-gradient(#efece6, #d3d0cb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#efece6, #d3d0cb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#efece6,#d3d0cb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#efece6, #d3d0cb); /* Standard syntax */
   height: 100vh;
 }
 
 h1 {
   text-align: center;
   color: #fff;
-  padding-top: 7px;
+  padding-top: 14px;
 }
 
 #wrapper {
@@ -27,46 +27,45 @@ h1 {
 
 #board {
   width: 600px;
-  height: width;
-  background: white;
+  height: 600px;
+  background: #fff;
   margin: auto;
   padding: 5px;
-  white-space: nowrap;
   line-height: 0;
   border-radius: 7px;
 }
 
 .fabuloso {
   outline: 1px solid #d3d0cb;
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
+  float: left;
+  margin: 0;
+  padding: 0;
   font-size: 0;
-  vertical-align: bottom;
   line-height: 0;
+  cursor: crosshair;
 }
 
 #options {
-	text-align: center;
-	background: #2d3047;
-	margin-top: 7px;
-	padding: 10px;
+  text-align: center;
+  background: #2d3047;
+  margin-top: 7px;
+  padding: 10px;
 }
 
 #penColor {
-	vertical-align: middle;
-	border: none;
-	margin: 5px;
+  vertical-align: middle;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
 }
 
-
 #btn {
-	background: #e2c044;
-	font-weight: bold;
-	font-size: 1.4em;
-	border: none;
-	color: black;
-	padding: 6px;
+  background: #e2c044;
+  font-weight: bold;
+  font-size: 1.4em;
+  border: none;
+  color: black;
+  padding: 6px;
 }
 
 #btn:hover:after {
@@ -74,6 +73,7 @@ h1 {
 }
 
 label {
-	color: white;
+  color: white;
   font-size: 1.4em;
+  cursor: pointer;
 }
